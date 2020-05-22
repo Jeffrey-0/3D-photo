@@ -1,0 +1,26 @@
+body{
+  background: #3e3e3e;
+}
+#container{
+  
+  cursor: grab;   /*鼠标呈手势拖拽状*/
+  padding: 100px;
+  perspective: 900px;  
+}
+.wrap{
+  width: 100px;
+  height: 150px;
+  margin: 100px auto;
+  position: relative;
+  transform-style: preserve-3d;
+}
+#container img{
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  resize: none;
+  transition: 2s;
+  /* 设置倒影 */
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>3D酷炫相册</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="container">
+    <div class="wrap">
+      <a href="img/1.jpg" ><img src="img/1.jpg" alt=""></a>
+      <a href="img/2.jpg" ><img src="img/2.jpg" alt=""></a>
+      <a href="img/3.jpg" ><img src="img/3.jpg" alt=""></a>
+      <a href="img/4.jpg" ><img src="img/4.jpg" alt=""></a>
+      <a href="img/5.jpg" ><img src="img/5.jpg" alt=""></a>
+      <a href="img/6.jpg" ><img src="img/6.jpg" alt=""></a>
+      <a href="img/7.jpg" ><img src="img/7.jpg" alt=""></a>
+      <a href="img/8.jpg" ><img src="img/8.jpg" alt=""></a>
+      <a href="img/9.jpg" ><img src="img/9.jpg" alt=""></a>
+      <a href="img/10.jpg"><img src="img/10.jpg" alt=""></a>
+      <a href="img/11.jpg"><img src="img/11.jpg" alt=""></a>
+      <a href="img/12.jpg"><img src="img/12.jpg" alt=""></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    var container = document.getElementById('container')
+    photo3D(container, {
+      isAutoPlay: true, // 是否自动轮播
+      interTime: 1000, // 轮播时间,单位:ms
+      rotateX: -20, // 初始沿x轴翻转角度,单位:deg
+      rotateY: 0 // 初始沿y轴翻转角度,单位:deg
+    })
+  </script>
+</body>
+</html>
